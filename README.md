@@ -8,13 +8,15 @@
 - **重载插件**：改完插件或配置，一点就生效。连接不断、页面不刷新、会话不丢。
 - **重启 DSH**：干净退出，由 systemd 立刻拉起，页面自动重连。
 
+本插件适用于 Linux 系统下的 DSH：重载随时可用；重启依赖 systemd，需要 DSH 由 systemd 托管并设置 `Restart=always`。
+
 一句话：**能重载就别重启，必须重启时重启得干净。**
 
 > English summary at the end.
 
 ## 安装
 
-要求：DSH 0.2.x（≥ `0.2.2-rc.5`）。重载无额外依赖；重启需要 Linux + systemd。
+要求：DSH 0.2.x（≥ `0.2.2-rc.5`）。
 
 1. 打开 DSH 的 **插件（Plugins）→ 添加插件（Add plugin）**。
 2. 输入仓库地址 `https://github.com/wellsoren/dsh-restart`；也可以先 `git clone` 再选本地目录。
@@ -70,9 +72,9 @@
 
 ## English
 
-**dsh-restart** adds two rows to the DSH sidebar "More" menu: **Reload plugins** (apply changed plugins and config in place, no process restart) and **Restart DSH** (graceful exit, then systemd brings it back).
+**dsh-restart** is built for DSH on Linux. It adds two rows to the sidebar "More" menu: **Reload plugins** (apply changed plugins and config in place, no process restart) and **Restart DSH** (graceful exit, then systemd brings it back).
 
-Requires DSH 0.2.x (≥ `0.2.2-rc.5`); restart needs a Linux host managed by systemd.
+Requires DSH 0.2.x (≥ `0.2.2-rc.5`); restart needs DSH managed by systemd with `Restart=always`.
 
 1. In DSH, open **Plugins → Add plugin**.
 2. Enter `https://github.com/wellsoren/dsh-restart` (or clone the repo and pick the local directory), then enable it and refresh the page once.

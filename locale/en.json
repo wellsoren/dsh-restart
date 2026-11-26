@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "DSH Restart",
+    "description": "Reload plugins or gracefully restart DSH from the sidebar \"More\" menu (requires systemd Restart=always)."
+  }
+}

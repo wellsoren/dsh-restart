@@ -1,0 +1,10 @@
+# 依赖与运行期产物
+node_modules/
+*.log
+*.tgz
+
+# 编辑器 / 系统
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/

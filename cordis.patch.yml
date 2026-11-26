@@ -1,0 +1,7 @@
+# dsh-restart bundle patch: one row, dual-face (host half = package default export,
+# browser half = ./client via the `dsh.client` declaration).
+# The row name MUST equal the package name — the client-modules node half resolves
+# `require.resolve('<row-name>/package.json')` to find this package.
+- insert:
+    - id: dsh-restart
+      name: '@local/dsh-restart'

@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "DSH 重启",
+    "description": "在侧边栏“更多”菜单里重载插件或优雅重启 DSH（需要 systemd Restart=always）。"
+  }
+}

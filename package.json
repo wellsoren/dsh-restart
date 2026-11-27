@@ -48,7 +48,8 @@
     "icon.svg",
     "locale/*.json",
     "README.md",
-    "LICENSE"
+    "LICENSE",
+    "restart-location.png"
   ],
   "engines": {
     "dsh": ">=0.2.2-rc.5 <0.3.0-0"

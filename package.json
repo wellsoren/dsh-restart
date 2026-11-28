@@ -49,7 +49,8 @@
     "locale/*.json",
     "README.md",
     "LICENSE",
-    "restart-location.png"
+    "restart-location.png",
+    "screenshots.json"
   ],
   "engines": {
     "dsh": ">=0.2.2-rc.5 <0.3.0-0"
